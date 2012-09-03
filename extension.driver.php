@@ -329,8 +329,9 @@
 		
 		
 		public function append_assets($context) {
-			$page = $context['parent']->Page;
-			$page->addStylesheetToHead(URL . '/extensions/dashboard_analytics/assets/dashboard.analytics.index.css', 'screen', 1000);
+			$page = Administration::instance()->Page;
+			$page->addStylesheetToHead(URL . '/extensions/dashboard/assets/dashboard.backend.css', 'screen', 666);
+			$page->addScriptToHead(URL . '/extensions/dashboard/assets/dashboard.backend.js', 667);
 		}
 		
 		
